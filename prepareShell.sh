@@ -1,3 +1,8 @@
+#!/bin/bash
+
+# Copy the script to install NerdFonts to home directory 
+cp ./installFonts.sh $HOME/installFonts.sh
+
 # Go to home directory
 cd
 
@@ -9,6 +14,9 @@ rm lsd_0.23.1_amd64.deb
 # Install Nerd-Fonts
 chmod +x ./installFonts.sh
 ./installFonts.sh
+
+# Delete the script once it has done its job
+rm ./installFonts.sh
 
 # Install bat (run it using 'batcat' command)
 sudo apt install bat
