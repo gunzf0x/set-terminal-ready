@@ -19,10 +19,10 @@ chmod +x ./installFonts.sh
 rm ./installFonts.sh
 
 # Install bat (run it using 'batcat' command)
-sudo apt install bat
+sudo apt install bat -y
 
 # Install Zsh
-sudo apt install zsh
+sudo apt install zsh -y
 
 # Install Oh-My-Zsh
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
