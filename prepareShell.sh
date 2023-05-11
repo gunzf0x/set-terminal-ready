@@ -44,4 +44,4 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 echo 'ZSH_THEME="powerlevel10k/powerlevel10k"' >> $HOME/.zshrc
 
 # Done
-echo -e "\n[*] Now, you should change the font of your terminal to a "Nerd Font" and then execute the command 'zsh'\n"
+echo -e "\n[*] Now, you should change the font of your terminal to a 'Nerd Font' and then execute the command 'zsh'\n"
