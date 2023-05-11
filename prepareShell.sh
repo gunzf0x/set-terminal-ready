@@ -24,6 +24,9 @@ sudo apt install bat -y
 # Install Zsh
 sudo apt install zsh -y
 
+# Set zsh as your "default" shell
+chsh -s $(which zsh)
+
 # Install Oh-My-Zsh
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
@@ -36,7 +39,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
 
 # Powerlevel 10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 # Run and configure Powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+echo 'ZSH_THEME="powerlevel10k/powerlevel10k"' >> $HOME/.zshrc
 
+# Done
+echo -e "\n[*] Now, you should change the font of your terminal to a "Nerd Font" and then execute the command 'zsh'\n"
