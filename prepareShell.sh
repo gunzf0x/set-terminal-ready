@@ -21,11 +21,18 @@ rm ./installFonts.sh
 # Install bat (run it using 'batcat' command)
 sudo apt install bat -y
 
+# Install xclip and xsel (tools to copy STDOUT to clipboard)
+sudo apt install xclip -y
+sudo apt install xsel -y
+
 # Install Zsh
 sudo apt install zsh -y
 
 # Set zsh as your "default" shell
 chsh -s $(which zsh)
+
+# When entering in "Oh-My-Zsh" tell the user to type "exit"
+echo -e "\n\n\n[*] Entering in 'Oh-My-Zsh', type 'exit' to continue with the script\n\n\n"
 
 # Install Oh-My-Zsh
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
